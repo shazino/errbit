@@ -8,6 +8,8 @@ class BacktraceLine
   field :file
   field :method
 
+  alias :method_name= :method=
+
   embedded_in :backtrace
 
   scope :in_app, where(:file => IN_APP_PATH)
