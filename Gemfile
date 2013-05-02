@@ -104,7 +104,7 @@ group :test do
 end
 
 group :heroku, :production do
-  gem 'unicorn'
+  gem 'puma', '~> 1.6.3'
 end
 
 # Use thin for development
